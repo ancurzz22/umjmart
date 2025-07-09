@@ -223,6 +223,32 @@
           padding: 0 20px;
         }
       }
+
+      /* === Gallery Carousel Control Fix === */
+      #galeri .carousel-control-prev,
+      #galeri .carousel-control-next {
+        width: 40px;
+        background-color: rgba(0, 0, 0, 0.1);
+        top: 50%;
+        transform: translateY(-50%);
+        height: 60px;
+        border-radius: 30px;
+        z-index: 2;
+      }
+
+      #galeri .carousel-control-prev {
+        left: -20px;
+      }
+
+      #galeri .carousel-control-next {
+        right: -20px;
+      }
+
+      #galeri .carousel-control-prev-icon,
+      #galeri .carousel-control-next-icon {
+        background-size: 70% 70%;
+        filter: invert(1);
+      }
     </style>
   </head>
   <body>
